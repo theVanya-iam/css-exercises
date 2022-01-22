@@ -1,0 +1,22 @@
+.left_button {
+    background-color: #000000;
+    color: #ffff;
+}
+
+.right_button {
+    background-color: rgba(243, 247, 10, 0.952);
+}
+
+.left_button,
+.right_button {
+    font-size: 28px;
+    font-family: Helvetica, 'Times New Roman', sans-serif;
+}
+
+/* 
+Above we are using the grouping selector in order to reduce the # of lines
+we type in. 
+There are individual styles that are applied to respectful left and right button,
+however, they share certain traits, therefore grouping selector is used, 
+without the use of another class to put them together.
+*/

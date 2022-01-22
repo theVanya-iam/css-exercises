@@ -1,0 +1,10 @@
+/* External CSS styling method */
+div {
+    color: white; 
+    background-color: red;
+    font-size: 33px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+

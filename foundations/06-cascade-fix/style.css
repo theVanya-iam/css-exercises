@@ -1,33 +1,45 @@
+/*  Elements with classes "para" OR "small-para"  */
+
 .para,
 .small-para {
   color: hsl(0, 100%, 50%);
 }
 
-.small-para {
-  font-size: 12px;
-}
-
+/*  elements with class "para"   */
 .para {
   font-size: 22px;
 }
 
-.confirm {
+/*  elements with class "small-para"    */
+.small-para {
+  font-size: 14px;
+}
+
+/* elements that are parts of both classes 
+"confirm" AND "button"     */
+
+.confirm.button {
   background: green;
   color: white;
   font-size: 20px;
   font-weight: bold;
 } 
 
+/*  elements with class "button"   */
 .button {
   background-color: #ffc0cb;
   color: black;
   font-size: 20px;
 }
 
-.child {
+/*  elements with that are parts of both classes
+"text" AND "child"   */
+.text .child {
   color: red;
   font-size: 14px;
 }
+
+/*  "div" elements with class "text" */
 
 div.text {
   color: green;
