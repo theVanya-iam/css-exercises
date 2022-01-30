@@ -1,11 +1,11 @@
-/* parent container for all below  */
 .header  {
   font-family: monospace;
   background: papayawhip;
 
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .logo {
@@ -14,20 +14,16 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
-
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
-
-  margin: 1em;
-  padding: 5px;
+  
   display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
 }
 
 a {
@@ -35,29 +31,22 @@ a {
   background: white;
   padding: 8px;
   /* this removes the line under the links */
-  
   text-decoration: none;
-  flex: 1;
 }
 
-.left-links{
+/* 
+
+.header {
+  padding: 8px;
   display: flex;
-  flex: 1;
-  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  margin-inline-start: -15px;
 }
 
-.right-links{
+ul {
   display: flex;
-  flex: 5;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  margin-right: auto;
-  margin-inline-end: -15px;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
 }
-
-li{
-  padding: 5px;
-  display: flex;
-}
+*/
