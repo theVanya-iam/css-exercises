@@ -8,14 +8,16 @@ body {
   overflow: hidden;
   font-family: Roboto, sans-serif;
 
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
 }
 
 /* content is a flex container  */
 .content {
-  align-items: center;
+  flex: 1;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   margin: 50px;
   
@@ -30,13 +32,9 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+
   padding: 10px;
   margin: 5px;
-}
-
-.buttons{
-  display: flex;
-  align-content: center;
 }
 
 input {
@@ -48,29 +46,25 @@ input {
 }
 
 /* header is a flex container  */
-.header{
+.header, .footer{
   display: flex;
   justify-content: space-between;
-  flex-shrink: 0;
+  padding: 16px;
 }
 
 /* footer is a flex container  */
 .footer{
-  display: flex;
-  justify-content: space-between;
   background-color: #eeeeee;
-  margin-top: auto;
 }
 
 /*  adjusts design and layout of 
 left-links and right-links on
 both footer and header.    */
 ul{
-  padding: 15px;
-  list-style: none;
   display: flex;
-  gap: 12px;
-  flex-shrink: 0;
+  list-style: none;
+  gap: 16px;
+  padding: 0;
   margin: 0;
 }
 
