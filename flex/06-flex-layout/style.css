@@ -1,10 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* body is the largest parental 
+flex container  */
 body {
-  height: 100vh;
-  margin: 0;
+  min-height: 100vh;
+  margin: 0px; /* temporary margin to see the body more clearly*/
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+  flex-direction: column;
+  display: flex;
+}
+
+/* content is a flex container  */
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  
 }
 
 img {
@@ -16,6 +30,13 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 10px;
+  margin: 5px;
+}
+
+.buttons{
+  display: flex;
+  align-content: center;
 }
 
 input {
@@ -23,5 +44,37 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
-  margin-bottom: 16px;
+  margin-bottom: px;
+}
+
+/* header is a flex container  */
+.header{
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+/* footer is a flex container  */
+.footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeeeee;
+  margin-top: auto;
+}
+
+/*  adjusts design and layout of 
+left-links and right-links on
+both footer and header.    */
+ul{
+  padding: 15px;
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(90, 87, 87);
 }
